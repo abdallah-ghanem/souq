@@ -1,4 +1,5 @@
 namespace souq.Models
+
 {
     public class ErrorViewModel
     {

@@ -1,0 +1,4 @@
+scaffold  dbcontext "Server=ABDALLAH\SQLEXPRESS;Database=souq;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -o Models -force
+
+write at pachage manager console
+Scaffold-DbContext "Server=ABDALLAH\SQLEXPRESS; Database=Souq; Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -Force
