@@ -15,12 +15,21 @@ namespace souq.Controllers
        */
         public IActionResult Index()
         {
-            return View();
+            SouqContext db = new SouqContext();
+            var cats = db.CatIds.ToList();
+            return View(cats);
         }
 
         public IActionResult Privacy()
         {
             return View();
+        }
+
+        public IActionResult Category()
+        {
+            SouqContext db= new SouqContext();
+            var cats= db.CatIds.ToList();
+            return View(cats);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
